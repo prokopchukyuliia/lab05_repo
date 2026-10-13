@@ -1,8 +1,8 @@
 // lr5.2.cpp
-// < прокопчук юлія >
-// лабораторна робота № 5.2
-// обчислення суми ряду тейлора за допомогою функцій (double)
-// варіант 24
+// < Прокопчук Юлія >
+// Лабораторна робота № 5.2
+// Обчислення суми ряду тейлора за допомогою функцій
+// Варіант 24
 
 
 #include <iostream>
@@ -11,8 +11,8 @@
 
 using namespace std;
 
-void Sum(const double x, const double eps, int& n, double& s);
-void Term(const double x, const int n, double& a);
+void Sum(const double x, const double eps, int &n, double &s);
+void Term(const double x, const int n, double &a);
 
 int main()
 {
@@ -50,7 +50,7 @@ int main()
     return 0;
 }
 
-void Sum(const double x, const double eps, int& n, double& s)
+void Sum(const double x, const double eps, int &n, double &s)
 {
     n = 0;
     double a = x;
@@ -62,7 +62,7 @@ void Sum(const double x, const double eps, int& n, double& s)
     } while (fabs(a) >= eps);
 }
 
-void Term(const double x, const int n, double& a)
+void Term(const double x, const int n, double &a)
 {
     double R = -x * n / (n + 1);
     a *= R;

@@ -4,7 +4,6 @@
 // Вкладені цикли
 // Варіант 24
 
-// Lab 5_1
 #include <iostream>
 #include <cmath>
 
@@ -30,3 +29,5 @@ double f(const double a)  // визначення
 {
     return (a * a + 1) / (sin(a) * sin(a) + 1);
 }
+
+//значення для перевірки: х = 0; у = 0

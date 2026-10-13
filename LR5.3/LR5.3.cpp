@@ -33,7 +33,7 @@ int main()
         double y = yp + k * dy;
 
         if (y < 0)
-            continue;
+            continue; // sqrt(y) визначений лише для y >= 0
 
         z = f(1 + sqrt(y) + y) + pow(f(1 + f(1) + pow(f(sqrt(y)), 2)), 2);
 
@@ -47,7 +47,7 @@ int main()
 
 double f(const double x)
 {
-    if (abs(x) >= 1)
+    if (fabs(x) >= 1)
         return sin(x / 2) / (1 + cos(x) * cos(x));
     else
     {

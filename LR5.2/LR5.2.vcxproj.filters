@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LR5.2_void.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LR5.2_double.cpp">
+    <ClCompile Include="LR5.2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
